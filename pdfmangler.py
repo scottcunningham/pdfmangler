@@ -14,7 +14,7 @@ parser.add_argument("-t", "--title", help="The 'title' tag to be written to the 
 args = parser.parse_args()
 
 if args.filename is "":
-	print "a"
+	print "No filename supplied, bailing out."
 	sys.exit(-1)
 
 filename = args.filename

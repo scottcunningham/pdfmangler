@@ -9,8 +9,8 @@ parser = argparse.ArgumentParser(description='A tool to alter PDF metadata.')
 filename = sys.argv[1]
 
 if filename is "":
-	print "No filename specified."
-	sys.exit(-1)
+    print "No filename specified."
+    sys.exit(-1)
 
 info = PdfFileReader(file(filename)).getDocumentInfo()
 
